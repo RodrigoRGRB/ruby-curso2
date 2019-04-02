@@ -16,7 +16,5 @@ for categoria, livros in biblioteca.livros do
     end
 end
 
-biblioteca.livros.each do |cat,livros| 
-  puts cat
-  livros.each{|l| puts l.valor}
-end
+hash = { testes: [teste_e_design], web_design: [web_design_responsivo]}
+p hash.values.flatten
