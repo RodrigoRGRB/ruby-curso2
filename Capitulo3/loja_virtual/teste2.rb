@@ -14,14 +14,16 @@ biblioteca.livros_por_categoria :testes do |livro|
     p livro.autor
 end
 
-#83
+biblioteca.livros_por_categoria :testes
+
+#73
 
 
 
 
-# livros = Set.new [teste_e_design, web_design_responsivo] 
-# for livro in livros do 
-#     puts livro 
+# livros = Set.new [teste_e_design, web_design_responsivo]
+# for livro in livros do
+#     puts livro
 # end
 
 # p teste_e_design.hash == web_design_responsivo.hash

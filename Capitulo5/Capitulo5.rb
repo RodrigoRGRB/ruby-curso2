@@ -21,7 +21,9 @@ p a, b, c
 numeros = [1,2,3,4,5]
 
 novos_numeros = for n in numeros
-    n * 2 
+    n * 2
 end
 
 p novos_numeros
+
+#testando gitpod
