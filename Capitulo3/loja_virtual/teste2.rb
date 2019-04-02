@@ -10,13 +10,18 @@ biblioteca.adiciona teste_e_design
 biblioteca.adiciona web_design_responsivo
 biblioteca.adiciona design
 
+relatorio = Relatorio.new biblioteca
+
+p relatorio.total
+
+
+=begin
 biblioteca.livros_por_categoria :testes do |livro|
     p livro.autor
 end
+#biblioteca.livros_por_categoria :testes
 
-biblioteca.livros_por_categoria :testes
-
-#73
+#76
 
 
 
@@ -27,3 +32,4 @@ biblioteca.livros_por_categoria :testes
 # end
 
 # p teste_e_design.hash == web_design_responsivo.hash
+=end

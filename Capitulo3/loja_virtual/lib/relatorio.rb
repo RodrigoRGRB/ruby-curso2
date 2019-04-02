@@ -1,16 +1,13 @@
 class Relatorio
     def initialize(biblioteca)
-        @biblioteca = Biblioteca
+        @biblioteca = biblioteca
     end
-
     def total
-        soma = 0.0
-
-        @biblioteca.livros.each do |livro|
-            soma += livro.valor
-        end
-
-        soma
+        # soma = 0.0
+        # @biblioteca.livros.each do |livro|
+        #     soma += livro.valor
+        # end
+        # soma
+        @biblioteca.livros.inject(0) { |tot, livro| tot += livro.valor }
     end
-
 end
