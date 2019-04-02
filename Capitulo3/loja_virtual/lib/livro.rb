@@ -5,6 +5,7 @@ class Livro
   attr_accessor :valor
   attr_reader :categoria
   attr_reader :isbn
+  attr_reader :autor
   
     
   
