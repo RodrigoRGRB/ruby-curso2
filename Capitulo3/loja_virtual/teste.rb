@@ -1,10 +1,22 @@
-require File.expand_path('lib/livro')
+require File.expand_path('lib/loja_virtual')
 
-#Livro.new "Rodrigo", 200
-teste = Livro.new("Rodrigo Gabriel", "1234556", 640)
-teste2 = Livro.new("Tárcio Zeme", "458678", 321)
+biblioteca = Biblioteca.new
 
-puts teste
-puts teste2
+teste_e_design = Livro.new "Mauricio Aniche", "123454", 247, 60.9, :testes
 
-#pagina29
+web_design_responsivo = Livro.new "Tárcio Zemel", "452565", 189, 70.9, :web_design
+
+biblioteca.adiciona teste_e_design
+biblioteca.adiciona web_design_responsivo
+
+for categoria, livros in biblioteca.livros do
+  p categoria
+    for livro in livros do
+      p livro.valor
+    end
+end
+
+biblioteca.livros.each do |cat,livros| 
+  puts cat
+  livros.each{|l| puts l.valor}
+end
