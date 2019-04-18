@@ -1,0 +1,34 @@
+#Hash
+frequency = Hash.new
+frequency["Hello"] = 1
+frequency["World"] = 2
+frequency[1] = 10
+
+# equivalente ao exemplo anterior
+frequency = { "hello" => 1, "world" => 2, 1 => 10 }
+print frequency
+
+print "\n"
+print frequency.keys
+
+print "\n"
+print frequency.values
+
+print "\n"
+print frequency.has_key? "hello"
+
+print "\n"
+print frequency.has_value? 1
+
+user_data = {
+'email' => 'cicrano@example.com',
+'full_name' => 'Cicrano'
+}
+
+print "\n"
+address = user_data['address']
+address.strip
+
+address = user_data['address'] || 'vazio'
+address.strip
+# "vazio"
